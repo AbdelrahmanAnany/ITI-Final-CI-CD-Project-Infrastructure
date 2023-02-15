@@ -1,5 +1,5 @@
-resource "google_compute_firewall" "firewall" "allow-ssh" {
-  name          = "allow-ssh"
+resource "google_compute_firewall" "firewall" {
+  name          = "firewall"
   source_ranges = ["0.0.0.0/0"]
   network       = google_compute_network.abdelrahman-vpc.name
 
