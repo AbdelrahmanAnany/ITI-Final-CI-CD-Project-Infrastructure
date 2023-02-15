@@ -15,7 +15,7 @@ resource "google_compute_instance" "private-instance" {
 
   }
 
-
+  #attach private virtual machine with management subnet
   network_interface {
     network = google_compute_network.abdelrahman-vpc.id
 

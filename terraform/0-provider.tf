@@ -2,7 +2,6 @@
 provider "google" {
   project = "iti-abdelrahman"
   region  = "us-central1"
-  # credentials = file("/home/abdelrahman/Documents/devops/gcp/imposing-ratio-319309.json")
 }
 #configuring terraform to use google cloud bucket to store terraform state
 # https://www.terraform.io/language/settings/backends/gcs
