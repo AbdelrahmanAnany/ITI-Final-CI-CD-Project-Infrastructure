@@ -12,12 +12,7 @@ resource "google_project_iam_binding" "project-service-account-iam" {
     "serviceAccount:${google_service_account.project-service-account.email}"
   ]
 }
-# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_service_account_iam
-resource "google_service_account_iam_member" "project-service-account" {
-  service_account_id = google_service_account.project-service-account.id
-  role               = "roles/iam.workloadIdentityUser"
-  member             = "serviceAccount:devops-v4.svc.id.goog[staging/service-a]"
-}
+
 
 # resource "google_service_account" "service-account" {
 #   account_id   = "service-account"
