@@ -11,4 +11,5 @@ resource "google_project_iam_binding" "project-service-account-iam" {
   members = [
     "serviceAccount:${google_service_account.project-service-account.email}"
   ]
+
 }
