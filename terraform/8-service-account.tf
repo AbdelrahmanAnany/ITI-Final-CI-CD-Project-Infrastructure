@@ -7,7 +7,7 @@ resource "google_service_account" "project-service-account" {
 #grant permissions for service account
 resource "google_project_iam_binding" "project-service-account-iam" {
   project = "iti-abdelrahman"
-  role    = "roles/storage.admin"
+  role    = "roles/container.admin"
   members = [
     "serviceAccount:${google_service_account.project-service-account.email}"
   ]
