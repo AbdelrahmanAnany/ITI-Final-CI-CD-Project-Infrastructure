@@ -81,7 +81,8 @@ gcloud auth application-default login
 ```
 ### 5. Connect to GKE Cluster
 > Go to the `Kubernetes Engine` Page in your `Clusters` tab you will find the `private-cluster`
-> ![private-cluster](https://github.com/AbdelrahmanAnany/ITI-Final-CI-CD-Project-Infrastructure/edit/main/screenshot/private-cluster.png)
+
+![private-cluster](https://github.com/AbdelrahmanAnany/ITI-Final-CI-CD-Project-Infrastructure/edit/main/screenshot/private-cluster.png)
 
 > Click on the `Action button` "Three dots" then `Connect`, Copy the command and paste it into the `VM SSH window`
 ```
