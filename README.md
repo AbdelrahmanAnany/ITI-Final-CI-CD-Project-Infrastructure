@@ -119,4 +119,4 @@ and copy the external IP address and paste in browser url as $ExternalIP:port
 
 **Connected Repository**
 
-Jekins CI/CD Repository: https://github.com/AbdelrahmanAnany/ITI-Final-CI-CD-Project-Jenkins
+Jekins CI/CD Repository: https://github.com/AbdelrahmanAnany/ITI-Final-CI-CD-Project-Application
