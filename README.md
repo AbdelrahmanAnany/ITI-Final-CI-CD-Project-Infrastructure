@@ -88,7 +88,8 @@ gcloud auth application-default login
 ```
 gcloud container clusters get-credentials private-cluster --zone us-central1-a --project iti-abdelrahman
 ```
-### 6. Building the Dockerfile for jenkins and pushing to Dockerhub
+## Fourth Part: Jenkins Configuration
+### 1. Building the Dockerfile for jenkins and pushing to Dockerhub
 Create the Dockerfile:
 Then:
 
@@ -103,13 +104,13 @@ Create the deployment.yml file
 ```
     kubectl apply -f deployment.yml
 ```
-### 7. Get `admin` user Password
+### 2. Get `admin` user Password
 
 Connect to Cluster via VM and type
 ```
   kubectl exec --namespace jenkins -it svc/jenkins-service -c jenkins -- /bin/cat /var/jenkins_home/secrets/initialAdminPassword && echo
 ```
-### 8. Get the `Jenkins URL`
+### 3. Get the `Jenkins URL`
 ```
 kubectl get all -n jenkins
 ```
